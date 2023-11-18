@@ -1,4 +1,4 @@
-# Interest Calculator WordPress Widget by [Calculator.iO](https://www.calculator.io/ "Calculator.iO Homepage")
+# Interest Calculator Widget for WordPress
 
 With this free interest calculator you can compute accumulation schedules, final balances, and accrued interest.
 
