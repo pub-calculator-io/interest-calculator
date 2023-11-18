@@ -1,4 +1,4 @@
-=== Interest Calculator by Calculator.iO ===
+=== Interest Calculator ===
 Contributors: calculatorio
 Tags: interest calculator, calculate interest, interest rate calculator, simple interest calculator, compound interest calculator, interest formula, interest on savings, loan interest calculator, mortgage interest calculator, credit card interest calculator
 Requires at least: 5.0
