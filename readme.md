@@ -7,7 +7,7 @@ With this free interest calculator you can compute accumulation schedules, final
 
 ## Installation
 
-1. [Download](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
+1. [Download](https://github.com/pub-calculator-io/interest-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
 2. Upload the /interest-calculator-master/ folder to the /wp-content/plugins/ directory.
 3. Activate the [Interest Calculator](https://www.calculator.io/interest-calculator/ "Interest Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
