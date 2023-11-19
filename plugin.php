@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Interest Calculator by www.calculator.io
+Plugin Name: CI Interest calculator
 Plugin URI: https://www.calculator.io/interest-calculator/
 Description: With this free interest calculator you can compute accumulation schedules, final balances, and accrued interest.
 Version: 1.0.0
