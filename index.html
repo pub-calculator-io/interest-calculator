@@ -106,14 +106,17 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
-                	<script type="text/javascript" src="./assets/js/chart.js" id="chartjs_script"></script>
+                	<script type="text/javascript" src="./assets/js/lib/chartjs/chart.min.js" id="chartjs_lib" defer></script>
+                	<script type="text/javascript" src="./assets/js/chart.js" id="chartjs_script" defer></script>
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -128,8 +131,7 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><style>
     .result-chart--red {
         background-color: #F87171;
@@ -138,7 +140,7 @@
 <div class="calculator-result col">
 	<p class="table-cell table-cell--dark table-cell--only-title">Interest</p>
 	<div class="table-cell table-cell--age table-cell--only row">
-		<div class="col chart__text">
+		<div class="col chart__text animate">
 			<p class="result-text" id="end-balance">End Balance: $135,479.01</p>
 			<p class="result-text result-text--small-loan" id="balance-with-inflation">After Inflation Adjustment: $100,809.11</p>
 			<p class="result-text result-text--small-loan" id="total-contribution">Total Principal: $99,000.00</p>
@@ -186,7 +188,7 @@
 			<table class="result-table">
 				<thead>
 					<tr>
-						<th class="indigo text-center">№</th>
+						<th class="indigo text-center">#</th>
 						<th class="indigo">DEPOSIT</th>
 						<th class="indigo">INTEREST</th>
 						<th class="indigo">ENDING BALANCE</th>
@@ -257,7 +259,7 @@
 			<table class="result-table">
 				<thead>
 					<tr>
-						<th class="indigo text-center">№</th>
+						<th class="indigo text-center">#</th>
 						<th class="indigo">DEPOSIT</th>
 						<th class="indigo">INTEREST</th>
 						<th class="indigo">ENDING BALANCE</th>
@@ -323,7 +325,7 @@
 					<td>$200.00</td>
 					<td>$130.80</td>
 					<td>$33,886.44</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #1 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 1 End</th></tr><tr>
 					<td class="text-center">13</td>
 					<td>$5,200.00</td>
 					<td>$151.46</td>
@@ -383,7 +385,7 @@
 					<td>$200.00</td>
 					<td>$166.73</td>
 					<td>$43,195.01</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #2 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 2 End</th></tr><tr>
 					<td class="text-center">25</td>
 					<td>$5,200.00</td>
 					<td>$187.53</td>
@@ -443,7 +445,7 @@
 					<td>$200.00</td>
 					<td>$204.37</td>
 					<td>$52,945.78</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #3 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 3 End</th></tr><tr>
 					<td class="text-center">37</td>
 					<td>$5,200.00</td>
 					<td>$225.31</td>
@@ -503,7 +505,7 @@
 					<td>$200.00</td>
 					<td>$243.80</td>
 					<td>$63,159.75</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #4 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 4 End</th></tr><tr>
 					<td class="text-center">49</td>
 					<td>$5,200.00</td>
 					<td>$264.89</td>
@@ -563,7 +565,7 @@
 					<td>$200.00</td>
 					<td>$285.10</td>
 					<td>$73,858.93</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #5 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 5 End</th></tr><tr>
 					<td class="text-center">61</td>
 					<td>$5,200.00</td>
 					<td>$306.35</td>
@@ -623,7 +625,7 @@
 					<td>$200.00</td>
 					<td>$328.36</td>
 					<td>$85,066.35</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #6 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 6 End</th></tr><tr>
 					<td class="text-center">73</td>
 					<td>$5,200.00</td>
 					<td>$349.78</td>
@@ -683,7 +685,7 @@
 					<td>$200.00</td>
 					<td>$373.68</td>
 					<td>$96,806.18</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #7 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 7 End</th></tr><tr>
 					<td class="text-center">85</td>
 					<td>$5,200.00</td>
 					<td>$395.27</td>
@@ -743,7 +745,7 @@
 					<td>$200.00</td>
 					<td>$421.14</td>
 					<td>$109,103.69</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #8 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 8 End</th></tr><tr>
 					<td class="text-center">97</td>
 					<td>$5,200.00</td>
 					<td>$442.93</td>
@@ -803,7 +805,7 @@
 					<td>$200.00</td>
 					<td>$470.87</td>
 					<td>$121,985.38</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #9 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 9 End</th></tr><tr>
 					<td class="text-center">109</td>
 					<td>$5,200.00</td>
 					<td>$492.84</td>
@@ -863,14 +865,11 @@
 					<td>$200.00</td>
 					<td>$522.95</td>
 					<td>$135,479.01</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #10 End</th></tr></tbody>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 10 End</th></tr></tbody>
 			</table>
 		</div>
 	</div>
 </div>
-
-<!-- <script src="./assets/js/chart.js"./assets/js/chart.js').then(e => switchTheme = e.default)
-</script> -->
 </span>
     </div>
 </div>

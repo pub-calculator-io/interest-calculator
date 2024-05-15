@@ -3,7 +3,6 @@
 With this free interest calculator you can compute accumulation schedules, final balances, and accrued interest.
 
 ![Interest Calculator Input Form](/assets/images/screenshot-1.png "Interest Calculator Input Form")
-![Interest Calculator Calculation Results](/assets/images/screenshot-2.png "Interest Calculator Calculation Results")
 
 ## Installation
 
