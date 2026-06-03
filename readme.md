@@ -1,6 +1,6 @@
 # Interest Calculator Widget for WordPress
 
-With this free interest calculator you can compute accumulation schedules, final balances, and accrued interest.
+Easily calculate simple and compound interest with our free Interest Calculator. Estimate final balances, accrued interest, and growth schedules in seconds!
 
 ![Interest Calculator Input Form](/assets/images/screenshot-1.png "Interest Calculator Input Form")
 
@@ -11,8 +11,8 @@ With this free interest calculator you can compute accumulation schedules, final
 3. Activate the [Interest Calculator](https://www.calculator.io/interest-calculator/ "Interest Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
 ## Usage
-* Add the shortcode `[ci_interest_calculator]` to your page, post or sidebar.
-* Or add the following code: `<?php display_ci_interest_calculator(); ?>` to your template where you would like the Interest Calculator to appear.
+* Add the shortcode `[calcio_interest_calculator]` to your page, post or sidebar.
+* Or add the following code: `<?php display_calcio_interest_calculator(); ?>` to your template where you would like the Interest Calculator to appear.
 
 ## Libraries in Use
 1. https://mathjs.org/
